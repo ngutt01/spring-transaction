@@ -1,0 +1,10 @@
+<beans>
+<bean id="firstspring" class="com.app.sathya.FirstSpring">
+   <property name="sid" >
+      <value>101</value>
+   </property>
+   <property name="sname" >
+      <value>rahul</value>
+   </property>
+</bean>
+</beans>
