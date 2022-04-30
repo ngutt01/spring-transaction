@@ -46,8 +46,8 @@
 		<!-- oracle driver dependency -->
 		<dependency>
 			<groupId>com.oracle</groupId>
-			<artifactId>ojdbc14.jar</artifactId>
-			<version>10.2.0.1.0</version>
+			<artifactId>ojdbc14</artifactId>
+			<version>10.2.0.2.0</version>
 		</dependency>
 
 		<!-- iText dependency -->

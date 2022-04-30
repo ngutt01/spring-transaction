@@ -21,7 +21,8 @@ public class DocumentController {
 		return  new  ModelAndView("pdfview","employees",employeesList);
 	}
 	
-	@GetMapping("/excel/naresh")
+
+	@GetMapping("/excel/bittu")
 	public  ModelAndView  handleExcel() {
 		List<Map<String,Object>>  employeesList=dao.getEmployees();
 		return  new  ModelAndView("excelview","employees",employeesList);
