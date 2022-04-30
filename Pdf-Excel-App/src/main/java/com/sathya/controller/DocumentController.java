@@ -27,4 +27,9 @@ public class DocumentController {
 		return  new  ModelAndView("excelview","employees",employeesList);
 	}
 
+	@GetMapping("/excel/test2")
+	public  ModelAndView  handleExcelTest2() {
+		List<Map<String,Object>>  employeesList=dao.getEmployees();
+		return  new  ModelAndView("excelview","employees",employeesList);
+	}
 }
