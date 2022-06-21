@@ -55,6 +55,7 @@ public class LoginController {
 		return   "login";
 	}
 	
+
 	
 	@RequestMapping(value="/getLoginPageTest3", method=RequestMethod.GET)
 	public   String   getLoginPageTest3(ModelMap  modelMap) {
@@ -64,6 +65,7 @@ public class LoginController {
 		return   "login";
 	}
 	
+
 	@RequestMapping(value="/getLoginPageTest2", method=RequestMethod.GET)
 	public   String   getLoginPageTest2(ModelMap  modelMap) {
 		LoginBean   loginBean =new LoginBean();
