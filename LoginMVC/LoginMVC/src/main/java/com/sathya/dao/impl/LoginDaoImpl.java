@@ -19,4 +19,16 @@ public class LoginDaoImpl implements ILoginDao {
 			return false;
 		}
 	}
+	
+	public boolean verifyUserInDBV1(String username, String password) {
+		int  count=jdbcTemplate.queryForObject("select  count(*)  from  Login_Tab  where  user_name=? and pass_word=?", Integer.class, username,password);
+		if(count==1) {
+			return  true;
+		}
+		else {
+			return false;
+		}
+	}
+	
+	
 }
