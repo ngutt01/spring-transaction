@@ -46,5 +46,25 @@ public class LoginController {
 		}
 		
 	}
+	
+	@RequestMapping(value="/checkLoginV1", method=RequestMethod.POST)
+	public   String   checkLoginV1(@Valid @ModelAttribute("userLogin")LoginBean   loginBean, BindingResult  result)
+	{
+		if(result.hasErrors()) {
+			return  "login";
+		}
+		else {
+			String  username=loginBean.getUsername();
+			String  password=loginBean.getPassword();
+			boolean  flag=dao.verifyUserInDB(username, password);
+			if(flag) {
+				return  "success";
+			}
+			else {
+				return  "failure";
+			}
+		}
+		
+	}
 
 }
