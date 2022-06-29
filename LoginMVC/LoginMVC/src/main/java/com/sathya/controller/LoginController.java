@@ -46,5 +46,13 @@ public class LoginController {
 		}
 		
 	}
+	
+	@RequestMapping(value="/getLoginPageTest3", method=RequestMethod.GET)
+	public   String   getLoginPageTest3(ModelMap  modelMap) {
+		LoginBean   loginBean =new LoginBean();
+		modelMap.addAttribute("userLogin", loginBean);
+		
+		return   "login";
+	}
 
 }
