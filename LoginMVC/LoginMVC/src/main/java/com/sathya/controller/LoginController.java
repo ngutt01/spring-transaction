@@ -101,5 +101,14 @@ public class LoginController {
 		return   "login";
 
 	}
+	
+	@RequestMapping(value="/getLoginPageTest4", method=RequestMethod.GET)
+	public   String   getLoginPageTest54(ModelMap  modelMap) {
+		LoginBean   loginBean =new LoginBean();
+		modelMap.addAttribute("userLogin", loginBean);
+		
+		return   "login";
+
+	}
 
 }
