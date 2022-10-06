@@ -12,7 +12,7 @@ import org.springframework.web.bind.annotation.RequestMethod;
 
 import com.sathya.bean.LoginBean;
 import com.sathya.dao.ILoginDao;
-
+//this is login controller
 @Controller
 public class LoginController {
 	
