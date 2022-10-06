@@ -3,7 +3,7 @@ package com.sathya.bean;
 import javax.validation.constraints.Size;
 
 import org.hibernate.validator.constraints.NotEmpty;
-
+//this is java bean
 public class LoginBean {
 	@NotEmpty
 	private   String   username;
