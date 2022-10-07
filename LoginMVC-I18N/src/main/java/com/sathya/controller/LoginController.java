@@ -26,6 +26,7 @@ public class LoginController {
 		
 		return   "login";
 	}
+	//test
 	//this checklogin handler
 	@RequestMapping(value="/checkLogin", method=RequestMethod.POST)
 	public   String   checkLogin(@Valid @ModelAttribute("userLogin")LoginBean   loginBean, BindingResult  result)
