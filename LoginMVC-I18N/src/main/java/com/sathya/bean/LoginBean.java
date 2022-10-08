@@ -4,6 +4,7 @@ import javax.validation.constraints.Size;
 
 import org.hibernate.validator.constraints.NotEmpty;
 //this is java bean
+//dummy changes in LoginBean in test branch
 public class LoginBean {
 	@NotEmpty
 	private   String   username;
