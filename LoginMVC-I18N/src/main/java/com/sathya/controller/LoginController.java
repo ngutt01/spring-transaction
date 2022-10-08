@@ -35,12 +35,14 @@ public class LoginController {
 			return  "login";
 		}
 		else {
+			//comment added
 			String  username=loginBean.getUsername();
 			String  password=loginBean.getPassword();
 			boolean  flag=dao.verifyUserInDB(username, password);
 			if(flag) {
 				return  "success";
 			}
+
 			else {
 				return  "failure";
 			}
